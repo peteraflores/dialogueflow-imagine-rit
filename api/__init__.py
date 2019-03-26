@@ -7,11 +7,11 @@ print("Flask running")
 
 @app.route("/", methods=["POST","GET"])
 def root_post():
-	if request.method == "POST":
-		print(request.json)
-		return "",200
-	else:
-        return """<form method="POST">
+    if request.method == "POST":
+        print(request.json)
+        return "",200
+    else:
+        return"""<form method="POST">
                   Language: <input type="text" name="language"><br>
                   Framework: <input type="text" name="framework"><br>
                   <input type="submit" value="Submit"><br>
